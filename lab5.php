@@ -52,11 +52,16 @@
     </div>
 
     <div class="container-fluid mt-3">
+        <?php
+            // $_GET['aralia]
+            if (isset($_GET['aralia'])) {                  
+                    if ($_GET['aralia'] == 'yes') {                                              
+        ?>
         <h3 class="text-white p-3 shadow">Aralia</h3>
         <div class="row mb-3">
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card mt-3 mb-3 shadow">
-                    <div class="card-header align-leff">
+                    <div class="card-header align-left">
                         <a href="https://www.google.com/maps/search/?api=1&query=45.63472,-122.6500">Castor Aralia
                         </a>
                     </div>
@@ -68,6 +73,10 @@
                 </div>
             </div>
         </div>
+        <?php 
+            } // end if
+        }  // end if
+        ?>
 
         <h3 class="p-3 shadow">Arborvitae</h3>
         <div class="row mb-3">
